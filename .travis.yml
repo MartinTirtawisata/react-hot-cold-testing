@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: iMG/RoVk909ZUKMii4KpkYtAIW4WnXVZFdLvRhfhPOB+AFsEQCtpe0hi21zqtjGaKMhmASCdNlqvl5PzHO8pj8sITXmEZNs6M2UM5EDjPzxubiQ4pROZSJRuJLFipszIoFAgUJh6qm+ORE89XtbtGqzL6EnHQ19vYf5z5hCyxIiai6PzdlSvAP1m9pkpLRHMDubxI2su+dj2tltuZzDcf4YBUGxQ4OilkiqPo7H3fPmTcaKFC2oz9XgPUB5+UqCFY16D2xl7IyIKOnzVAQ/IbL85WZDivuARc6QdMHIm8pkcMvNkMV0aIjLj29pkgngdM8MLBbkGLF5zwpZjlBD/AFAshwMuBHG/+Wvy5aXu4mqwfCEPOKAoKkr1XFDaJUaTxqxs5F5s4tOmO5nUXoOQnFTXSroPfaM8DuJswJ2lCF5gxoaZcFXxGOBZ5hdgxKnX7PSg4wVYKcupkPslePIbstYlHAGSsJF9aBSh+Zaud42LatyKqLehgjqYwAQDwGd0v/Bs8COLrr0JVwlK4TjtXEIqCTJ/eTNfHislrKPV301n+scjytsOoROJxPZK5SsMuoqXmk81e7OL+kgac5TRcL9P9jGeYxviyU/NHOv25MK4sqiEINUvnGu56kKnw1oZCsQUTEr5AynoILUqb/1ugQH1N3VFk4H0erlAjiW7NLo=
+  app: rocky-lake-85376
+  on:
+    repo: MartinTirtawisata/react-hot-cold-testing
